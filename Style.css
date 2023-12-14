@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Global Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%; /* Adjusted padding for responsiveness */
+  background: #0c0c0c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2rem; /* Adjusted font size for responsiveness */
+  color: #137fbd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a {
+  font-size: 1.2rem; /* Adjusted font size for responsiveness */
+  color: #137fbd;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2rem; /* Adjusted margin for responsiveness */
+  transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: rgb(89, 255, 0);
+}
+
+/* Sections Styling */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem; /* Adjusted font size for responsiveness */
+  color: #0e0d0d;
+  font-weight: 700;
+  background-color:grey;
+}
+
+section:nth-child(odd) {
+  background: rgb(67, 67, 63);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  section {
+    font-size: 2.5rem;
+
+  }
+}
